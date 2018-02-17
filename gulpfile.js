@@ -1,7 +1,5 @@
 // Stock the gulp object
 var gulp = require('gulp');
-// Stock the sass object
-var css = require('gulp-css');
 // Allows you to add prefixes in css
 // ex : transform: scale(2) =-moz-transform: scale(2);-buildkit-transform: scale(2);
 var autoprefixer = require('gulp-autoprefixer');
@@ -27,28 +25,6 @@ var browserSync = require('browser-sync');
 var gutil = require('gulp-util');
 // Call function in order
 var runSequence = require('run-sequence');
-
-
-var cssOption = {
-  errLogToConsole: true, 
-  outputStyle: 'expanded'
-};
-
-//Compile CSS files
-//Allows you to create a task (looks like a function) The first parameter is the name of the task
-// and can be called in the console ex gulp css
-gulp.task('css', function() {
-  return gulp.src('src/css/*.css')
-  .pipe(sourcemaps.init())
-  .pipe(autoprefixer())
-  .pipe(sourcemaps.write('maps'))
-  .pipe(css(cssOption).on('error', css.logError))
-  .pipe(css())
-  .pipe(gulp.dest('src/css'))
-  .pipe(browserSync.reload({
-    stream: true
-  }));
-});
 
 //Copy CSS sourcemaps from src to build folder
 gulp.task('cssmaps', function(){
@@ -97,14 +73,14 @@ gulp.task('browserSync', function() {
 // Lets you see each change in .css files
 // in case of change the sass task will call
 gulp.task('watch',function() {
-  gulp.watch('src/css/*.css',['css']);
+  gulp.watch('src/css/*.css',browserSync.reload);
   gulp.watch('src/*.html', browserSync.reload);
   gulp.watch('src/js/*.js', browserSync.reload);
 });
 
 //Run sequence to build build folder
 gulp.task('build', function(callback){
-  runSequence('clean:build','css', ['useref','images'], callback);
+  runSequence('clean:build', ['useref','images'], callback);
 });
 
 // This task is called default and can be started by typing the gulp command
