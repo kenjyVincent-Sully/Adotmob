@@ -10,4 +10,4 @@
 
 ## Configuration
 
-Change the path of the browserSync in the file gulpfile.js line 93
+Change BrowserSync path in gulpfile.js line 80.
