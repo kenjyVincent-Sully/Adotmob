@@ -151,6 +151,11 @@ button{
   outline: 0;
   text-transform: uppercase;
   margin-top: 8%;
+
+  
+}
+svg{
+  padding-right: 9px;
 }
 .m-append-text{
   transform:  translate(100%,0); 
