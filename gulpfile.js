@@ -73,7 +73,7 @@ gulp.task('browserSync', function() {
 // Lets you see each change in .css files
 // in case of change the sass task will call
 gulp.task('watch',function() {
-  gulp.watch('src/css/*.css',browserSync.reload);
+  gulp.watch('src/css/*.css', browserSync.reload);
   gulp.watch('src/*.html', browserSync.reload);
   gulp.watch('src/js/*.js', browserSync.reload);
 });

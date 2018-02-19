@@ -1,0 +1,584 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+@font-face{
+  font-family: "HelveticaNeueLTStdCn";
+  src: url("../fonts/HelveticaNeueLTStdCn.woff");
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+body{
+  
+  color: #fff;
+  font-family: "HelveticaNeueLTStdCn";
+  background-color: #4facdb;
+}
+
+a{
+  color: #fff;
+}
+
+img {
+  pointer-events: none;
+}
+
+.titles-animations{
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  font-size: 8vw;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  -webkit-overflow-scrolling: touch;
+
+}
+
+
+.titles-animations .centerMiddle{
+  padding: 27% 0 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.titles-animations .center{
+  padding: 15% 0 0;
+ 
+}
+
+
+.titles-animations .offre-konnect .m-append-text3{
+  font-size: 5vw;
+  padding-top: 8%;
+}
+
+.titles-animations .offre-konnect .m-append-text4{
+  font-size: 13vw;
+}
+
+main{
+  overflow-y: hidden;
+}
+main .content-top{
+  /* height: 60vh; */
+  padding: 11em 0;
+}
+
+main .content-top .m-logo{
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+  top: 10%;
+
+}
+
+
+main .content-bottom .bgvid{
+  width: 100%;
+}
+
+main .content-top .disclaimer{
+  font-size: 3.3vw;
+  margin: 0 3%;
+  padding: 5% 0;
+  position: absolute;
+  top: 39vmax;
+}
+button{
+  background: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  color: #fff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: uppercase;
+  margin-top: 8%;
+}
+.m-append-text{
+  transform:  translate(100%,0); 
+
+  animation: append-text-right ease-in-out 1s, fade-out 1s linear;
+  -webkit-animation: append-text-right ease-in-out 1s, fade-out 1s linear;
+  -moz-animation: append-text-right ease-in-out 1s, fade-out 1s linear;
+  -o-animation: append-text-right ease-in-out 1s, fade-out 1s linear;
+  -ms-animation: append-text-right ease-in-out 1s, fade-out 1s linear;
+
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%; 
+
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+.animation-group1 {
+  margin-top: 25%;
+}
+
+.animation-group1 .m-append-text1{
+  animation-delay: 0s, 4s, 8s;
+}
+
+.animation-group1 .m-append-text2{
+
+  animation-delay: 0.5s, 4s, 8s;
+}
+
+.animation-group1 .m-append-text3{
+
+  animation-delay: 1s, 4s, 8s;
+}
+.animation-group2 .m-append-text1{
+
+  animation-delay: 4s, 8s, 12s;
+}
+.animation-group2 .m-append-text2{
+
+  animation-delay: 4.5s, 8s, 12s;
+}
+.animation-group2 .m-append-text3{
+
+  animation-delay: 5s, 8s, 12s;
+}
+.animation-group2 .m-append-text4{
+
+  animation-delay: 5.5s, 8s, 12s;
+}
+.animation-group3 .m-append-text1{
+
+  animation-delay: 8s, 12s, 16s;
+}
+.animation-group3 .m-append-text2{
+
+  animation-delay: 8.5s, 12s, 16s;
+  font-size: 15vw;
+}
+.animation-group3 .m-append-text3{
+
+  animation-delay: 9s, 12s, 16s;
+}
+.animation-group3 .m-append-text4{
+
+  animation-delay: 9.5s, 12s, 16s;
+  font-size: 11vw;
+}
+
+.animation-group4 .m-append-text1{
+
+  animation-delay: 13s;
+}
+.animation-group4 .m-append-text2{
+
+  animation-delay: 13.5s;
+}
+.animation-group4 .m-append-text3{
+
+  animation-delay: 14s;
+}
+.animation-group4 .m-append-text4{
+
+  animation-delay: 14.5s;
+}
+
+
+.m-logo{
+  animation: animate-logo ease-in-out 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animate-logo ease-in-out 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: animate-logo ease-in-out 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: animate-logo ease-in-out 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: animate-logo ease-in-out 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+
+  animation-delay: 4s;
+}
+
+.m-fade-in-text{
+  opacity: 0;
+  
+  animation: fade-in ease-in-out 1s;
+  -webkit-animation: fade-in ease-in-out 1s;
+  -moz-animation: fade-in ease-in-out 1s;
+  -o-animation: fade-in ease-in-out 1s;
+  -ms-animation: fade-in ease-in-out 1s;
+
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; 
+
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; 
+
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; 
+
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; 
+} 
+
+.disclaimer{
+  opacity: 0;
+
+  animation: fade-in linear 1s, fade-out linear 3s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: fade-in linear 1s, fade-out linear 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: fade-in linear 1s, fade-out linear 3s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: fade-in linear 1s, fade-out linear 3s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: fade-in linear 1s, fade-out linear 3s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+
+  animation-delay: 4s, 9.5s;
+}
+
+.map{
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  transform:  translate(0,100%);
+
+  animation: slide-up linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: slide-up linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: slide-up linear 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: slide-up linear 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: slide-up linear 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  
+  animation-delay: 15s;
+
+}
+
+@keyframes slide-up{
+  100% {
+    transform:  translate(0px,96px);
+    height: 65%;
+  }
+}
+
+@-moz-keyframes slide-up{
+  100% {
+    -moz-transform:  translate(0px,96px);
+    height: auto;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  100% {
+    -webkit-transform:  translate(0px,96px);
+    height: 65%;
+  }
+}
+
+@-o-keyframes slide-up {
+
+  100% {
+    -o-transform:  translate(0px,96px);
+    height: auto;
+  }
+}
+
+@-ms-keyframes slide-up {
+
+  100% {
+    -ms-transform:  translate(0px,96px);
+    height: auto;
+  }
+}
+
+@keyframes animate-logo{
+  0% {
+    transform:  translate(0px,0px)  scaleX(1.00) scaleY(1.00) ;
+  }
+  100% {
+    transform:  translate(-123px,-58px)  scaleX(0.60) scaleY(0.60) ;
+  }
+}
+
+@-moz-keyframes animate-logo{
+  0% {
+    -moz-transform:  translate(0px,0px)  scaleX(1.00) scaleY(1.00) ;
+  }
+  100% {
+    -moz-transform:  translate(-123px,-58px)  scaleX(0.60) scaleY(0.60) ;
+  }
+}
+
+@-webkit-keyframes animate-logo {
+  0% {
+    -webkit-transform:  translate(0px,0px)  scaleX(1.00) scaleY(1.00) ;
+  }
+  100% {
+    -webkit-transform:  translate(-123px,-58px) scaleX(0.60) scaleY(0.60) ;
+  }
+}
+
+@-o-keyframes animate-logo {
+  0% {
+    -o-transform:  translate(0px,0px)  scaleX(1.00) scaleY(1.00) ;
+  }
+  100% {
+    -o-transform:  translate(-123px,-58px)  scaleX(0.60) scaleY(0.60) ;
+  }
+}
+
+@-ms-keyframes animate-logo {
+  0% {
+    -ms-transform:  translate(0px,0px)  scaleX(1.00) scaleY(1.00) ;
+  }
+  100% {
+    -ms-transform:  translate(-123px,-58px)  scaleX(0.60) scaleY(0.60) ;
+  }
+}
+
+@keyframes append-text-right{
+
+  100% {
+    transform:  translate(0,0);
+  }
+}
+
+@-moz-keyframes append-text-right{
+
+  100% {
+    -moz-transform:  translate(0,0);
+  }
+}
+
+@-webkit-keyframes append-text-right {
+
+  100% {
+    -webkit-transform:  translate(0,0);
+  }
+}
+
+@-o-keyframes append-text-right {
+
+  100% {
+    -o-transform:  translate(0,0);
+  }
+}
+
+@-ms-keyframes append-text-right {
+
+  100% {
+    -ms-transform:  translate(0,0)  ;
+  }
+}
+
+
+@keyframes fade-out{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fade-out{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fade-out {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fade-out {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+
+@keyframes fade-in{
+  0% {
+    opacity:0;
+    transform:  translate(0,0);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0,0);
+  }
+}
+
+@-moz-keyframes fade-in{
+  0% {
+    opacity:0;
+    -moz-transform:  translate(0,0);
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  translate(0,0);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0,0);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0,0);
+  }
+}
+
+@-o-keyframes fade-in {
+  0% {
+    opacity:0;
+    -o-transform:  translate(0,0);
+  }
+  100% {
+    opacity:1;
+    -o-transform:  translate(0,0);
+  }
+}
+
+@-ms-keyframes fade-in {
+  0% {
+    opacity:0;
+    -ms-transform:  translate(0,0);
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  translate(0,0);
+  }
+}
