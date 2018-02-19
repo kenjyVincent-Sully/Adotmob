@@ -53,6 +53,17 @@ gulp.task('images', function(){
     .pipe(gulp.dest('build/img'));
 });
 
+//Copy Video from scr to web folder
+gulp.task('video', function(){
+  return gulp.src('src/video/**/*')
+    .pipe(gulp.dest('build/video'));
+});
+
+//Copy Fonts from scr to web folder
+gulp.task('fonts', function(){
+  return gulp.src('src/fonts/**/*')
+    .pipe(gulp.dest('build/fonts'));
+});
 //Delete build folder
 gulp.task('clean', function(callback){
   del('build');
@@ -80,7 +91,7 @@ gulp.task('watch',function() {
 
 //Run sequence to build build folder
 gulp.task('build', function(callback){
-  runSequence('clean:build', ['useref','images'], callback);
+  runSequence('clean:build', ['useref','images','video','fonts'], callback);
 });
 
 // This task is called default and can be started by typing the gulp command
